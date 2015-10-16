@@ -2,8 +2,8 @@
 
 <%= simple_form_for @job do |form| %>
   <%= form.input :title, label: "Job title" %>
-  <%= form.input :company, label: "Your company" %>
+  <%= form.input :company, label: "Company name" %>
   <%= form.input :description, as: :text %>
-  <%= form.input :url, label: "Link to job" %>
+  <%= form.input :url, label: "Link to company's website" %>
   <%= form.button :submit %>
 <% end %>
