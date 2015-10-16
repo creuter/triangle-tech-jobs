@@ -1,6 +1,11 @@
-<%= link_to "Back to all jobs", root_path %>
+<% content_for :left do %>
+  <%= link_to "&larr; Back".html_safe, root_path %>
+<% end %>
 
-<%= link_to "Edit Job", edit_job_path(@job) %>
+<% content_for :right do %>
+  <%= link_to "Edit", edit_job_path(@job) %>
+<% end %>
+
 
 <h2><%= @job.title %></h2>
 <h3><%= link_to @job.company, @job.url %></h3>

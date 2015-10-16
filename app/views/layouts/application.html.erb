@@ -5,6 +5,8 @@
   <meta name="ROBOTS" content="NOODP" />
   <meta name="viewport" content="initial-scale=1" />
   <title><%= title %></title>
+  <script src="https://use.typekit.net/uul4upj.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 </head>
@@ -12,9 +14,15 @@
   <%= render "flashes" -%>
 
   <div class="top-bar">
+    <div class="top-bar-left">
+      <%= yield :left %>
+    </div>
     <h1>
       <%= link_to "Triangle Tech Jobs", root_path %>
     </h1>
+    <div class="top-bar-right">
+      <%= yield :right %>
+    </div>
   </div>
 
   <main class="container">

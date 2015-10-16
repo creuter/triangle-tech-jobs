@@ -1,10 +1,15 @@
-<%= link_to "Post a Job", new_job_path %>
+<% content_for :right do %>
+  <%= link_to "Post a Job", new_job_path %>
+<% end %>
 
-<ul class="slats">
+<ul class="job-items">
   <% @jobs.each do |job| %>
-    <li class="slat">
-      <h2><%= link_to job.title, job_path(job) %></h2>
-      <p><%= job.company %></p>
+    <li class="job-item">
+      <%= link_to job_path(job) do %>
+        <span class="job-item-title"><%= job.title %></span>
+        <span class="job-item-company"><%= job.company %></span>
+        <span class="job-item-city">Raleigh</span>
+      <% end %>
     </li>
   <% end %>
 </ul>

@@ -5,6 +5,11 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+
+  @include media($max-width) {
+    font-size: 1.25em;
+  }
 }
 
 h1,

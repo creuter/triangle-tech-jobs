@@ -1,6 +1,6 @@
-<h1>Edit Job</h1>
-
-<%= link_to "Cancel", job_path(@job) %>
+<% content_for :right do %>
+  <%= link_to "Cancel", job_path(@job) %>
+<% end %>
 
 <%= simple_form_for @job do |form| %>
   <%= form.input :title, label: "Job title" %>

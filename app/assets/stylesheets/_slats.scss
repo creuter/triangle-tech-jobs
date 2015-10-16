@@ -1,4 +1,35 @@
-.slat {
-  @include padding($small-spacing null);
-  border-top: $base-border;
+.job-items {
+  padding-left: $base-spacing;
 }
+
+.job-item {
+  border-top: $base-border;
+
+  a {
+    @include padding($small-spacing);
+    display: block;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(#000, 0.025);
+    }
+  }
+}
+
+.job-item-title {
+  display: inline-block;
+  font-weight: 800;
+  margin-right: $base-spacing;
+}
+
+.job-item-company {
+  color: $light-font-color;
+  display: inline-block;
+}
+
+.job-item-city {
+  color: $light-font-color;
+  float: right;
+  font-size: $small-font-size;
+}
+
