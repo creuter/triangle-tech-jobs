@@ -5,7 +5,7 @@
 <ul>
   <% @jobs.each do |job| %>
     <li>
-      <h2><%= job.title %></h2>
+      <h2><%= link_to job.title, job_path(job) %></h2>
       <p><%= job.company %></p>
     </li>
   <% end %>
