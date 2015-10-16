@@ -10,7 +10,17 @@
 </head>
 <body class="<%= body_class %>">
   <%= render "flashes" -%>
-  <%= yield %>
+
+  <div class="top-bar">
+    <h1>
+      <%= link_to "Triangle Tech Jobs", root_path %>
+    </h1>
+  </div>
+
+  <main class="container">
+    <%= yield %>
+  </div>
+
   <%= render "javascript" %>
 </body>
 </html>

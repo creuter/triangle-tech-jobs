@@ -1,10 +1,8 @@
-<h1>Triangle Tech Jobs</h1>
-
 <%= link_to "Post a Job", new_job_path %>
 
-<ul>
+<ul class="slats">
   <% @jobs.each do |job| %>
-    <li>
+    <li class="slat">
       <h2><%= link_to job.title, job_path(job) %></h2>
       <p><%= job.company %></p>
     </li>

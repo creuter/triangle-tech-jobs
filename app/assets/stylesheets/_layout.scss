@@ -1,0 +1,7 @@
+body {
+  background-color: $body-background-color;
+}
+
+.container {
+  @include outer-container;
+}

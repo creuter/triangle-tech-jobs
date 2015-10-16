@@ -1,0 +1,17 @@
+.top-bar {
+  background-color: $white;
+  border-bottom: $base-border;
+  padding: $base-spacing;
+  margin-bottom: $large-spacing;
+
+  h1 {
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    a {
+      color: $base-font-color;
+    }
+  }
+}

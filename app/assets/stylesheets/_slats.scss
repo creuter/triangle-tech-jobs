@@ -1,0 +1,4 @@
+.slat {
+  @include padding($small-spacing null);
+  border-top: $base-border;
+}
